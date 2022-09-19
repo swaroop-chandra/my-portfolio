@@ -1,0 +1,20 @@
+h1.profile_name {
+  margin-left: 40px;
+  font-size: 30px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+h4.nav_link {
+  margin: 0 30px;
+  font-weight: 400;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1.5;
+}
+
+.nav_container {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}

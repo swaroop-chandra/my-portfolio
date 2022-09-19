@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Nav from "./component/Nav/Nav";
+import Page1 from "./component/Page1/Page1";
+import AOS from "aos";
+import { useEffect } from "react";
+import "aos/dist/aos.css";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 600,
+      easing: "ease-in-sine",
+    });
+    AOS.refresh();
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ParallaxProvider>
+        <Nav />
+        <Page1 />
+      </ParallaxProvider>
     </div>
   );
 }
