@@ -63,26 +63,56 @@ function AboutMe() {
               className="flex_between"
               style={{ width: "30%", margin: "10px" }}
             >
-              <img
-                src={window.location.origin + "/images/svg/facebook_white.svg"}
-                alt="profile"
-                className="icon_svg"
-              />
-              <img
-                src={window.location.origin + "/images/svg/instagram_white.svg"}
-                alt="profile"
-                className="icon_svg"
-              />
-              <img
-                src={window.location.origin + "/images/svg/linkedin_white.svg"}
-                alt="profile"
-                className="icon_svg"
-              />
-              <img
-                src={window.location.origin + "/images/svg/git_hub.svg"}
-                alt="profile"
-                className="icon_svg"
-              />
+              <a
+                href="https://www.facebook.com/swaroop.chandra.39/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={
+                    window.location.origin + "/images/svg/facebook_white.svg"
+                  }
+                  alt="profile"
+                  className="icon_svg"
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/swapo_chan/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={
+                    window.location.origin + "/images/svg/instagram_white.svg"
+                  }
+                  alt="profile"
+                  className="icon_svg"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/swaroop-chandra/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={
+                    window.location.origin + "/images/svg/linkedin_white.svg"
+                  }
+                  alt="profile"
+                  className="icon_svg"
+                />
+              </a>
+              <a
+                href="https://github.com/swaroop-chandra"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={window.location.origin + "/images/svg/git_hub.svg"}
+                  alt="profile"
+                  className="icon_svg"
+                />
+              </a>
             </div>
           </div>
         </div>
