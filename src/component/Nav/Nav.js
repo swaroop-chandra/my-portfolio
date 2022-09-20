@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Box from "@mui/material/Box";
 import "./Nav.css";
+import sc_logo from "../../images/sc_logo.png";
 
 function Item(props) {
   const { sx, ...other } = props;
@@ -51,6 +52,11 @@ function Nav() {
         }}
       >
         <h1 className="profile_name">
+          <img
+            src={`${sc_logo}`}
+            alt="profile"
+            style={{ width: "45px", height: "45px", marginRight: "20px" }}
+          />
           <a href="#about_me">Swaroop Chandra</a>
         </h1>
         <Box
